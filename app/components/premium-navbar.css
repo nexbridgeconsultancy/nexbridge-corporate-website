@@ -1,0 +1,25 @@
+/* Nexbridge v0.5.2: subtle zoom-OUT on hover, no dropdown */
+.nb-nav-shell { position:relative; z-index:100; background:#fff; }
+.nb-nav-inner { min-height:96px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.nb-nav-brand { display:inline-flex; align-items:center; flex-shrink:0; }
+.nb-nav-brand img { width:172px; height:76px; object-fit:contain; object-position:left center; }
+.nb-nav-links { display:flex; align-items:center; gap:9px; }
+.nb-nav-link { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:11px 12px; border-radius:8px; font-size:13px; font-weight:700; color:#173451; background:transparent; transition:color .3s ease,background .3s ease,box-shadow .3s ease; }
+.nb-nav-link span { display:inline-block; transform:scale(1); transition:transform .38s cubic-bezier(.2,.8,.2,1); }
+.nb-nav-link:hover,.nb-nav-link:focus-visible { background:#e8f5fc; color:#1463b8; box-shadow:0 5px 18px #1463b814; }
+.nb-nav-link:hover span,.nb-nav-link:focus-visible span { transform:scale(.91); }
+.nb-nav-link.nb-current { color:#1463b8; }
+.nb-nav-link:focus-visible { outline:2px solid #1463b8; outline-offset:2px; }
+.nb-nav-link.nb-contact-link { background:#eaf6f9; color:#08678b; }
+.nb-nav-link.nb-contact-link:hover { background:#d6f0fb; color:#1463b8; }
+@media(max-width:850px) { .nb-nav-inner { flex-direction:column; align-items:flex-start; padding:12px 0; gap:6px; } .nb-nav-links { width:100%; overflow-x:auto; gap:2px; scrollbar-width:thin; } .nb-nav-link { flex-shrink:0; font-size:12px; padding:10px; } }
+@media(prefers-reduced-motion:reduce) { .nb-nav-link,.nb-nav-link span { transition:none; } }
+/* Optional global navigation enhancement: import this in app/layout.tsx. */
+header nav a, header nav button, .nb-navbar nav a, .premium-navbar nav a {
+  font-size: 16px !important;
+  font-weight: 650 !important;
+  letter-spacing: -.01em;
+}
+@media (max-width: 900px) {
+ header nav a, header nav button, .nb-navbar nav a, .premium-navbar nav a { font-size: 14px !important; }
+}

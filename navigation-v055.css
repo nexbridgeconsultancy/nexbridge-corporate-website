@@ -1,0 +1,9 @@
+/* Optional global navigation enhancement: import this in app/layout.tsx. */
+header nav a, header nav button, .nb-navbar nav a, .premium-navbar nav a {
+  font-size: 15px !important;
+  font-weight: 650 !important;
+  letter-spacing: -.01em;
+}
+@media (max-width: 900px) {
+ header nav a, header nav button, .nb-navbar nav a, .premium-navbar nav a { font-size: 14px !important; }
+}

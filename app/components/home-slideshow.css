@@ -1,0 +1,28 @@
+/* Nexbridge v0.5.4 — visible slideshow and compact homepage hero */
+.n4 .n4-hero { position: relative; isolation: isolate; overflow: hidden; }
+.nb-home-slideshow { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.nb-home-slide { position: absolute; inset: 0; background-position: center center; background-size: cover; opacity: 0; transform: scale(1.06); transition: opacity 1.8s ease-in-out, transform 7s ease-out; will-change: opacity; }
+.nb-home-slide.is-active { opacity: 1; transform: scale(1); }
+.nb-home-slide-overlay { position: absolute; inset: 0; background: linear-gradient(90deg,rgba(4,19,40,.83) 0%,rgba(5,27,54,.72) 40%,rgba(7,32,61,.38) 75%,rgba(7,33,62,.30) 100%); }
+.n4 .n4-hero-grid { position: relative; z-index: 1; min-height: 510px; }
+.n4 .n4-hero-copy { padding-top: 64px; padding-bottom: 32px; }
+.n4 .n4-hero h1 { margin-top: 23px; margin-bottom: 20px; }
+.n4 .n4-hero-bottom { padding-top: 34px; }
+.n4 .n4-hero-visual { min-height: 510px; background: radial-gradient(circle at 55% 45%,rgba(38,121,182,.18),rgba(8,43,81,.12) 70%); }
+@media (max-width: 1000px) {
+  .n4 .n4-hero-grid { min-height: 470px; }
+  .n4 .n4-hero-copy { padding-top: 52px; }
+  .n4 .n4-hero-visual { min-height: 470px; }
+}
+@media (max-width: 760px) {
+  .n4 .n4-hero-grid { min-height: 0; }
+  .n4 .n4-hero-copy { padding: 56px 0 28px; }
+  .n4 .n4-hero-visual { min-height: 300px; }
+  .n4 .n4-hero-bottom { padding-top: 32px; }
+  .nb-home-slide-overlay { background: linear-gradient(180deg,rgba(4,19,40,.82),rgba(6,31,59,.58)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nb-home-slide { transition: none; transform: none; will-change: auto; }
+  .nb-home-slide:not(:first-child) { display: none; }
+  .nb-home-slide:first-child { opacity: 1; }
+}

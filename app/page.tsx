@@ -2,6 +2,7 @@ import './homepage-v04.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, ArrowRight, BriefcaseBusiness, CloudCog, Code2, Compass, Globe2, Building2, HeartPulse, Truck, Factory, CheckCircle2 } from 'lucide-react';
+import HomeSlideshow from "./components/HomeSlideshow";
 
 const services = [
   { icon: Compass, title: 'Management Consulting', description: 'Business strategy, operating model reviews and practical transformation roadmaps.', href: '/management-consulting', number: '01' },
@@ -20,6 +21,7 @@ const industries = [
 export default function Home() {
   return <div className="n4">
     <section className="n4-hero">
+      <HomeSlideshow />
       <div className="wrap n4-hero-grid">
         <div className="n4-hero-copy">
           <div className="n4-kicker n4-kicker-light"><span className="n4-spark"/> SINGAPORE-BASED · GLOBALLY MINDED</div>
