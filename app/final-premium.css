@@ -1,0 +1,58 @@
+/* Nexbridge final premium service-page design: self-contained, imported by page-template.tsx */
+.nb-final{--ink:#08233e;--muted:#536e84;color:var(--ink);font-family:"Segoe UI",Arial,sans-serif}
+.nb-final .wrap{width:min(1200px,calc(100% - 64px));margin:auto}
+.nb-final-hero{background:#071b30;color:#fff;overflow:hidden}
+.nb-final-hero-grid{display:grid;grid-template-columns:1.08fr .92fr;min-height:570px}
+.nb-final-copy{padding:82px 40px 55px 0;display:flex;flex-direction:column;align-items:flex-start;position:relative;z-index:1}
+.nb-final-kicker{font-size:11px;letter-spacing:.18em;font-weight:800;color:#8ad8f5}
+.nb-final-hero h1{font-size:clamp(45px,5.1vw,76px);line-height:1.06;letter-spacing:-.058em;margin:33px 0 25px;font-weight:800;color:#fff;max-width:780px}
+.nb-final-hero h1 span{color:#6fd4fa}
+.nb-final-copy>p{font-size:18px;line-height:1.75;color:#d1e2ed;max-width:610px;margin:0 0 30px}
+.nb-final-primary{display:inline-flex;gap:32px;align-items:center;justify-content:space-between;background:#72d5f7;color:#061e36;padding:18px 23px;font-size:14px;font-weight:800;border-radius:3px;transition:background .2s,transform .2s}
+.nb-final-primary:hover{background:#b1ecff;transform:translateY(-2px)}
+.nb-final-hero-meta{margin-top:auto;padding-top:35px;display:flex;align-items:center;gap:15px;color:#8eb2cb;font-size:10px;font-weight:800;letter-spacing:.17em}
+.nb-final-hero-meta span{width:25px;height:1px;background:#67d0f2}
+.nb-final-photo{min-height:570px;background-position:center;background-size:cover;position:relative;border-left:1px solid #ffffff26}
+.nb-final-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#071b3055,transparent 45%),linear-gradient(0deg,#071b3055,transparent 65%)}
+.nb-final-it-consulting .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80")}
+.nb-final-cloud-devops .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80")}
+.nb-final-management-consulting .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80")}
+.nb-final-industries .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80")}
+.nb-final-tag{font-size:11px;font-weight:800;letter-spacing:.18em;color:#1376b2}
+.nb-final-lead{padding:100px 0;background:#fff}
+.nb-final-lead-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:85px;align-items:end}
+.nb-final-lead h2,.nb-final-outcomes h2{font-size:clamp(36px,4vw,57px);line-height:1.16;letter-spacing:-.048em;color:#082b48;margin:20px 0 0}
+.nb-final-lead-grid>p,.nb-final-outcomes p{font-size:17px;line-height:1.85;color:#567187}
+.nb-final-capabilities{background:#f5f8fb;padding:90px 0 100px}
+.nb-final-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;padding-bottom:30px;border-bottom:1px solid #cbdde9}
+.nb-final-heading h2{font-size:clamp(32px,3.5vw,47px);letter-spacing:-.045em;color:#092b49;margin:0}
+.nb-final-row{display:grid;grid-template-columns:80px 1fr 25px;gap:22px;align-items:start;border-bottom:1px solid #d2e0e9;padding:35px 8px}
+.nb-final-index{color:#1475ad;font-weight:800;font-size:12px;letter-spacing:.12em;padding-top:9px}
+.nb-final-row h3{font-size:clamp(24px,2.6vw,34px);letter-spacing:-.035em;color:#0a2b48;margin:0 0 12px}
+.nb-final-row p{font-size:16px;line-height:1.8;color:#557086;margin:0;max-width:750px}
+.nb-final-row>svg{color:#137bb6;margin-top:8px}
+.nb-final-row ul{list-style:none;padding:15px 0 0;display:flex;gap:14px;flex-wrap:wrap}
+.nb-final-row li{display:flex;align-items:center;gap:7px;font-size:13px;color:#23577b}
+.nb-final-outcomes{padding:105px 0;background:#fff}
+.nb-final-outcomes-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.nb-final-output-list{border-top:1px solid #d4e2eb}
+.nb-final-output-list>div{display:flex;gap:26px;align-items:center;padding:25px 0;border-bottom:1px solid #d4e2eb}
+.nb-final-output-list span{font-size:12px;color:#1479b6;font-weight:800}
+.nb-final-output-list strong{font-size:18px;color:#103b5b;font-weight:700}
+.nb-final-process{background:#eef4f8;padding:95px 0 105px}
+.nb-final-process h2{font-size:clamp(34px,3.7vw,51px);letter-spacing:-.05em;margin:18px 0 35px;color:#0a2b48}
+.nb-final-process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#d2e0eb;border:1px solid #d2e0eb}
+.nb-final-process-grid>div{background:#fff;padding:35px}
+.nb-final-process-grid span{font-size:12px;color:#0b77b7;font-weight:800}
+.nb-final-process-grid h3{font-size:23px;margin:35px 0 12px;color:#0b2c4c}
+.nb-final-process-grid p{font-size:15px;color:#577388;line-height:1.75;margin:0}
+.nb-final-cta{background:linear-gradient(115deg,#071c31,#0d426b);color:white;padding:85px 0}
+.nb-final-cta-grid{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.nb-final-cta .nb-final-tag{color:#8edaf6}
+.nb-final-cta h2{font-size:clamp(35px,3.7vw,52px);letter-spacing:-.05em;color:white;margin:15px 0}
+.nb-final-cta p{color:#c8ddeb;font-size:16px}
+@media(max-width:900px){.nb-final-hero-grid{grid-template-columns:1.1fr .9fr}.nb-final-copy{padding-right:24px}.nb-final-hero h1{font-size:clamp(39px,5vw,58px)}.nb-final-lead-grid,.nb-final-outcomes-grid{gap:35px}}
+@media(max-width:760px){.nb-final .wrap{width:calc(100% - 34px)}.nb-final-hero-grid{grid-template-columns:1fr}.nb-final-copy{padding:58px 0 42px}.nb-final-hero h1{font-size:clamp(40px,10vw,58px)}.nb-final-copy>p{font-size:16px}.nb-final-photo{min-height:240px;border-left:0}.nb-final-lead,.nb-final-outcomes{padding:65px 0}.nb-final-lead-grid,.nb-final-outcomes-grid{grid-template-columns:1fr;gap:20px}.nb-final-capabilities,.nb-final-process{padding:65px 0}.nb-final-heading{display:block}.nb-final-heading h2{margin-top:16px}.nb-final-row{grid-template-columns:33px 1fr 18px;gap:9px;padding:27px 0}.nb-final-row h3{font-size:24px}.nb-final-row p{font-size:15px}.nb-final-process-grid{grid-template-columns:1fr}.nb-final-process-grid>div{padding:27px}.nb-final-process-grid h3{margin-top:16px}.nb-final-cta{padding:65px 0}.nb-final-cta-grid{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.nb-final-primary{transition:none}}
+
+.nb-final-contact .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80")}
