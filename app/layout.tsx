@@ -6,8 +6,9 @@ import "./globals.css";
 import "./subpage-refinements.css";
 import "./v06-premium.css";
 import "./v08-launch.css";
+import "./v09-audit.css";
 
-const site = "https://nexbridgeconsultancy.com";
+const site = "https://www.nexbridgeconsultancy.com";
 const description = "Singapore-based management consulting, IT advisory and Cloud & DevOps services. Bridging Vision. Delivering Value.";
 export const metadata: Metadata = {
   metadataBase: new URL(site),
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   applicationName: "Nexbridge",
   alternates: { canonical: "/" },
   openGraph: {
-    type: "website", locale: "en_SG", url: site,
+    type: "website", locale: "en_SG",
     siteName: "Nexbridge Management Consulting",
     title: "Nexbridge | Bridging Vision. Delivering Value.",
     description,
