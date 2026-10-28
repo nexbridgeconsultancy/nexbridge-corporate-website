@@ -1,0 +1,13 @@
+/* v1.0.2: restrained bridge-inspired hero artwork */
+.nb-v10-art-word{display:none!important}
+.nb-v10-hero-art{background:linear-gradient(145deg,#071b31 0%,#0b365d 55%,#11537e 100%)}
+.nb-v10-art-orbit{width:350px;height:350px;top:16%;left:17%;border-color:#85cce32c;box-shadow:0 0 0 55px #ffffff03,0 0 0 110px #ffffff02}
+.nb-v102-bridge{position:absolute;inset:12% 10% 15%;opacity:.85;filter:drop-shadow(0 12px 28px #03132255)}
+.nb-v102-deck{position:absolute;left:5%;right:5%;height:3px;top:70%;background:linear-gradient(90deg,transparent,#7cd5f6 15%,#d5f5ff 50%,#7cd5f6 85%,transparent);box-shadow:0 0 20px #66d6ff3b}
+.nb-v102-tower{position:absolute;top:23%;height:48%;width:3px;background:linear-gradient(#b7edff,#5bbfe8)}
+.nb-v102-tower-left{left:30%}.nb-v102-tower-right{right:30%}
+.nb-v102-cable{position:absolute;top:28%;height:42%;width:1px;background:#9cdbf19c;transform-origin:top}
+.nb-v102-cable-one{left:30%;transform:rotate(30deg)}.nb-v102-cable-two{left:30%;transform:rotate(-25deg)}
+.nb-v102-cable-three{right:30%;transform:rotate(25deg)}.nb-v102-cable-four{right:30%;transform:rotate(-30deg)}
+.nb-v10-art-caption{color:#b6d8e9;letter-spacing:.16em}
+@media(max-width:760px){.nb-v102-bridge{inset:7% 15% 18%}.nb-v10-art-orbit{width:220px;height:220px;top:-3%;left:25%}}

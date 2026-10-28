@@ -8,6 +8,7 @@ import "./v06-premium.css";
 import "./v08-launch.css";
 import "./v09-audit.css";
 import "./v10-premium.css";
+import "./v102-hero.css";
 
 const site = "https://www.nexbridgeconsultancy.com";
 const description = "Singapore-based management consulting, IT advisory and Cloud & DevOps services. Bridging Vision. Delivering Value.";
