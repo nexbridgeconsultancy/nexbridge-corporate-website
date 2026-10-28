@@ -1,0 +1,13 @@
+/* v0.7 responsive accessible mobile navigation, preserving desktop logo dimensions */
+.nb-v7-toggle{display:none;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #d6e7f2;border-radius:9px;background:#f0f8fc;color:#103c61;cursor:pointer}
+@media(max-width:850px){
+ .nb-nav-inner{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;min-height:78px;gap:0;padding:6px 0}
+ .nb-nav-brand img{width:155px;height:68px}
+ .nb-v7-toggle{display:inline-flex}
+ .nb-nav-links{display:none;width:100%;overflow:visible;flex-direction:column;align-items:stretch;gap:4px;padding:12px 0 16px;border-top:1px solid #e3edf4}
+ .nb-nav-links.nb-v7-open{display:flex}
+ .nb-nav-link{justify-content:flex-start;font-size:15px!important;padding:13px 16px;min-height:46px}
+ .nb-nav-link span{transform:none!important}
+}
+@media(min-width:851px){.nb-nav-links{display:flex!important}}
+@media(prefers-reduced-motion:reduce){.nb-nav-link,.nb-nav-link span{transition:none}}
