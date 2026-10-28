@@ -1,8 +1,10 @@
-import Link from "next/link";
-import { ArrowUpRight, Mail, MapPin } from "lucide-react";
+import type { Metadata } from "next";
+import { ArrowUpRight,Mail,MapPin } from "lucide-react";
+import CopyEmail from "../components/CopyEmail";
 import "../final-premium.css";
-export default function Contact(){
-return <div className="nb-final nb-final-contact">
-<section className="nb-final-hero"><div className="wrap nb-final-hero-grid"><div className="nb-final-copy"><span className="nb-final-kicker">NEXBRIDGE / CONTACT</span><h1>Let's discuss what's next<span>.</span></h1><p>Business priorities, technology challenges or a new direction—we'd welcome a brief introduction.</p><a className="nb-final-primary" href="mailto:nexbridgeconsultancy@gmail.com?subject=Nexbridge%20Business%20Enquiry">Email Nexbridge <ArrowUpRight size={19}/></a><div className="nb-final-hero-meta">SINGAPORE-BASED <span/> BUSINESS ENQUIRIES</div></div><div className="nb-final-photo" role="img" aria-label="Corporate office interior"/></div></section>
-<section className="nb-final-outcomes"><div className="wrap nb-final-outcomes-grid"><div><span className="nb-final-tag">DIRECT CONTACT</span><h2>Start with the essentials.</h2><p>Introduce your organisation, what you're looking to achieve and the best way to reach you.</p></div><div className="nb-final-output-list"><div><Mail size={21}/><a href="mailto:nexbridgeconsultancy@gmail.com" style={{overflowWrap:"anywhere",color:"#075e9a",fontWeight:700}}>nexbridgeconsultancy@gmail.com</a></div><div><MapPin size={21}/><strong>Singapore</strong></div><div><span>01</span><strong>Nexbridge Management Consulting Pte. Ltd.</strong></div></div></div></section>
+import "../launch-polish.css";
+export const metadata:Metadata={title:"Contact",description:"Contact Nexbridge Management Consulting Pte. Ltd. in Singapore."};
+export default function Contact(){return <div className="nb-final nb-polish-contact">
+<section className="nb-polish-contact-hero"><div className="wrap"><span className="nb-final-kicker">NEXBRIDGE / CONTACT</span><h1>Let's start a conversation.</h1><p>Tell us what you are planning, changing or trying to solve.</p></div></section>
+<section className="nb-polish-contact-body"><div className="wrap nb-polish-contact-grid"><div><span className="nb-final-tag">DIRECT CONTACT</span><h2>Good work starts with a clear brief.</h2><p>Include your organisation, your objective, and any useful context. We welcome enquiries about management consulting, IT consulting and Cloud & DevOps.</p><div className="nb-polish-contact-steps"><span>01 / Introduce your organisation</span><span>02 / Share the challenge</span><span>03 / Suggest a next step</span></div></div><aside className="nb-polish-contact-card"><div className="nb-polish-contact-icon"><Mail size={24}/></div><h3>Business enquiries</h3><a className="nb-polish-email" href="mailto:nexbridgeconsultancy@gmail.com">nexbridgeconsultancy@gmail.com</a><div className="nb-polish-contact-actions"><a href="mailto:nexbridgeconsultancy@gmail.com?subject=Nexbridge%20Business%20Enquiry" className="nb-final-primary">Write an email <ArrowUpRight size={18}/></a><CopyEmail/></div><div className="nb-polish-location"><MapPin size={17}/> Singapore · Nexbridge Management Consulting Pte. Ltd.</div></aside></div></section>
 </div>}

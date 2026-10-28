@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { ArrowUpRight, Check, ArrowRight } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import "./final-premium.css";
+import "./launch-polish.css";
 
 type Section = {heading:string;body:string;bullets?:string[]};
 type PageType = "it-consulting"|"cloud-devops"|"management-consulting"|"industries";
@@ -19,9 +20,9 @@ export function InnerPage({eyebrow,title,lead,sections,pageType="it-consulting"}
     <Link href="/contact" className="nb-final-primary">Discuss your priorities <ArrowUpRight size={19}/></Link>
     <div className="nb-final-hero-meta">SINGAPORE-BASED <span/> STRATEGY & TECHNOLOGY</div>
    </div><div className="nb-final-photo" role="img" aria-label={`${eyebrow} corporate photography`}/></div></section>
-  <section className="nb-final-lead"><div className="wrap nb-final-lead-grid"><div><span className="nb-final-tag">01 / {detail.label}</span><h2>{detail.intro}</h2></div><p>Our recommendations are shaped by the business context, available information and agreed scope—not generic templates or unsupported promises.</p></div></section>
-  <section className="nb-final-capabilities"><div className="wrap"><div className="nb-final-heading"><span className="nb-final-tag">02 / AREAS OF FOCUS</span><h2>Where we can help</h2></div><div className="nb-final-rows">{sections.map((s,i)=><article key={s.heading} className="nb-final-row"><span className="nb-final-index">{String(i+1).padStart(2,"0")}</span><div><h3>{s.heading}</h3><p>{s.body}</p>{s.bullets&&<ul>{s.bullets.map(b=><li key={b}><Check size={15}/>{b}</li>)}</ul>}</div><ArrowUpRight size={20} aria-hidden="true"/></article>)}</div></div></section>
-  <section className="nb-final-outcomes"><div className="wrap nb-final-outcomes-grid"><div><span className="nb-final-tag">03 / ILLUSTRATIVE OUTPUTS</span><h2>Clarity you can work with.</h2><p>Depending on the engagement, the work may include practical outputs such as:</p></div><div className="nb-final-output-list">{detail.deliverables.map((x,i)=><div key={x}><span>{String(i+1).padStart(2,"0")}</span><strong>{x}</strong></div>)}</div></div></section>
+  <section className="nb-final-lead"><div className="wrap nb-final-lead-grid"><div><span className="nb-final-tag">01 / {detail.label}</span><h2>{detail.intro}</h2></div><p>We begin with the operating reality: objectives, constraints, existing systems and the decisions that matter most.</p></div></section>
+  <section className="nb-final-capabilities"><div className="wrap"><div className="nb-final-heading"><span className="nb-final-tag">02 / AREAS OF FOCUS</span><h2>Where we can help</h2></div><div className="nb-final-rows">{sections.map((s,i)=><article key={s.heading} className="nb-final-row"><span className="nb-final-index">{String(i+1).padStart(2,"0")}</span><div><h3>{s.heading}</h3><p>{s.body}</p>{s.bullets&&<ul>{s.bullets.map(b=><li key={b}><Check size={15}/>{b}</li>)}</ul>}</div></article>)}</div></div></section>
+  <section className="nb-final-outcomes"><div className="wrap nb-final-outcomes-grid"><div><span className="nb-final-tag">03 / ILLUSTRATIVE OUTPUTS</span><h2>Practical outputs.</h2><p>Depending on the engagement, the work may include practical outputs such as:</p></div><div className="nb-final-output-list">{detail.deliverables.map((x,i)=><div key={x}><span>{String(i+1).padStart(2,"0")}</span><strong>{x}</strong></div>)}</div></div></section>
   <section className="nb-final-process"><div className="wrap"><span className="nb-final-tag">04 / OUR APPROACH</span><h2>From understanding to action.</h2><div className="nb-final-process-grid">{detail.process.map((x,i)=><div key={x}><span>0{i+1}</span><h3>{x}</h3><p>{["Start with your priorities and current reality.","Evaluate practical options and trade-offs.","Agree on recommendations and next steps."][i]}</p></div>)}</div></div></section>
   <section className="nb-final-cta"><div className="wrap nb-final-cta-grid"><div><span className="nb-final-tag">NEXT STEP</span><h2>Let's make the next move count.</h2><p>Tell us what you are working towards.</p></div><Link href="/contact" className="nb-final-primary">Contact Nexbridge <ArrowUpRight size={19}/></Link></div></section>
  </div>

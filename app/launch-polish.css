@@ -1,0 +1,64 @@
+/* Nexbridge consolidated launch polish — applies only to pages that import it */
+.nb-polish-hero-visual{background:linear-gradient(140deg,rgba(5,23,43,.8),rgba(10,62,102,.82))!important;border-left:1px solid #ffffff20}
+.nb-polish .n4-hero .n4-logo-panel,.nb-polish .n4-hero .n4-hero-logo,.nb-polish .n4-hero .n4-visual-caption{display:none!important}
+.nb-polish-visual-inner{position:relative;z-index:2;width:min(80%,420px);padding:36px 0;text-align:left}
+.nb-polish-visual-eyebrow,.nb-polish-visual-foot{display:block;font-size:11px;letter-spacing:.17em;font-weight:800;color:#a8d7ef}
+.nb-polish-n-mark{font-size:clamp(145px,17vw,260px);font-weight:900;letter-spacing:-.13em;line-height:1.1;color:#e9faff;text-shadow:0 10px 35px #001a3160;margin:12px 0 4px}
+.nb-polish-visual-rule{width:95px;height:3px;background:#68d8ff}
+.nb-polish-visual-inner p{font-size:clamp(25px,2.6vw,36px);font-weight:750;letter-spacing:-.035em;line-height:1.2;color:white;margin:20px 0 30px}
+.nb-polish .n4-industry{cursor:pointer;text-decoration:none;transition:background .2s,transform .2s,border-color .2s}
+.nb-polish .n4-industry:focus-visible,.nb-polish .n4-service-card:focus-visible,.nb-final-primary:focus-visible,.nb-copy-email:focus-visible{outline:3px solid #57d1ff;outline-offset:3px}
+.nb-polish .n4-industry:hover{transform:translateY(-3px);background:#ffffff20}
+.nb-final-row{grid-template-columns:75px 1fr!important}
+.nb-final-row>svg{display:none!important}
+.nb-final-lead{padding:74px 0!important}
+.nb-final-capabilities{padding:72px 0 80px!important}
+.nb-final-outcomes{padding:78px 0!important}
+.nb-final-process{padding:75px 0 82px!important}
+.nb-final-hero h1{overflow-wrap:break-word}
+.nb-final-cloud-devops .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85")!important}
+.nb-final-industries .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85")!important}
+.nb-final-contact .nb-final-photo{background-image:url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85")!important}
+.nb-polish-contact-hero,.nb-polish-about-hero{background:linear-gradient(115deg,#071b30,#0d426a);color:white;padding:76px 0 82px}
+.nb-polish-contact-hero h1,.nb-polish-about-hero h1{font-size:clamp(41px,5vw,70px);letter-spacing:-.055em;line-height:1.09;color:white;margin:20px 0}
+.nb-polish-contact-hero p,.nb-polish-about-hero p{font-size:18px;color:#d0e4f0;line-height:1.7;max-width:690px}
+.nb-polish-contact-body{background:#f4f8fb;padding:85px 0 100px}
+.nb-polish-contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:85px;align-items:start}
+.nb-polish-contact-grid h2,.nb-polish-about-intro h2,.nb-polish-about-method h2,.nb-polish-about-focus h2{font-size:clamp(34px,3.7vw,52px);letter-spacing:-.05em;line-height:1.15;color:#0b2d4b;margin:18px 0 20px}
+.nb-polish-contact-grid p,.nb-polish-about-intro p,.nb-polish-about-focus p{font-size:16px;color:#526e82;line-height:1.85}
+.nb-polish-contact-steps{display:grid;gap:13px;margin-top:35px;font-size:13px;font-weight:700;color:#1c648e}
+.nb-polish-contact-card{background:white;border:1px solid #d6e6f0;padding:42px;box-shadow:0 18px 45px #0a2f4c12}
+.nb-polish-contact-icon{color:#0d77b0;margin-bottom:30px}
+.nb-polish-contact-card h3{font-size:27px;color:#0c2c4b;margin:0 0 20px}
+.nb-polish-email{display:block;font-size:clamp(14px,1.7vw,19px);color:#075c92;font-weight:700;overflow-wrap:anywhere}
+.nb-polish-contact-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:30px 0}
+.nb-copy-email{display:inline-flex;gap:8px;align-items:center;padding:16px;border:1px solid #b7d1e3;background:white;color:#164c72;font-weight:700;cursor:pointer}
+.nb-polish-location{display:flex;gap:10px;align-items:flex-start;padding-top:20px;border-top:1px solid #e0eaf1;font-size:13px;line-height:1.6;color:#557184}
+.nb-polish-privacy .nb-v6-page-hero{padding:48px 0 52px!important}
+.nb-polish-privacy .nb-v6-page-hero h1{font-size:clamp(36px,4vw,54px)!important;margin:12px 0}
+.nb-polish-updated{font-size:12px;color:#a9d8ed}
+.nb-polish-about-hero em{font-style:normal;color:#83d9f7}
+.nb-polish-about-intro{padding:85px 0}
+.nb-polish-about-intro-grid,.nb-polish-about-focus-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:start}
+.nb-polish-about-method{background:#f2f7fb;padding:85px 0}
+.nb-polish-about-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#cbdce8;border:1px solid #cbdce8;margin-top:35px}
+.nb-polish-about-steps article{background:white;padding:34px}
+.nb-polish-about-steps article>span{color:#1475ad;font-weight:800;font-size:12px}
+.nb-polish-about-steps h3{font-size:25px;color:#0b2d4b;margin:26px 0 10px}
+.nb-polish-about-steps p{color:#557286;line-height:1.8;font-size:15px}
+.nb-polish-about-focus{padding:90px 0}
+.nb-polish-about-focus .nb-final-primary{margin-top:18px}
+.nb-polish-about-links{border-top:1px solid #d4e2ec}
+.nb-polish-about-links a{display:flex;align-items:center;gap:18px;border-bottom:1px solid #d4e2ec;padding:27px 8px;font-weight:750;color:#0a3655}
+.nb-polish-about-links a svg:first-child{color:#1178b5}
+.nb-polish-about-links a svg:last-child{margin-left:auto}
+.nb-polish-about-footer{background:#e9f3f9;padding:24px 0}
+.nb-polish-about-footer .wrap{display:flex;gap:13px;align-items:flex-start;color:#496d85;font-size:13px}
+.nb-polish-about-footer p{margin:0}
+@media(max-width:760px){.nb-polish-visual-inner{width:80%}.nb-polish-n-mark{font-size:150px}.nb-polish-hero-visual{min-height:290px!important}.nb-polish-contact-grid,.nb-polish-about-intro-grid,.nb-polish-about-focus-grid{grid-template-columns:1fr;gap:20px}.nb-polish-about-steps{grid-template-columns:1fr}.nb-polish-contact-card{padding:25px}.nb-polish-contact-hero,.nb-polish-about-hero{padding:55px 0}.nb-polish-contact-body,.nb-polish-about-intro,.nb-polish-about-method,.nb-polish-about-focus{padding:60px 0}.nb-final-row{grid-template-columns:35px 1fr!important}.nb-final-lead,.nb-final-outcomes{padding:58px 0!important}}
+@media(max-width:390px){.nb-polish .n4-hero h1{font-size:39px!important}.nb-polish-contact-actions .nb-final-primary{width:100%}.nb-polish-email{font-size:14px}}
+
+/* Site-wide footer refinement, avoids the conspicuous white panel where logo image is opaque */
+.footer .n4-footer-brand{display:inline-flex;align-items:center;background:#eaf4fa;border-radius:3px;padding:5px 10px}
+.footer .n4-footer-brand img{max-width:175px;height:auto}
+@media(max-width:760px){.footer .footerGrid{gap:30px}.footer .footerLinks{display:flex;flex-wrap:wrap;gap:15px 22px}}
