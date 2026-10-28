@@ -64,36 +64,15 @@
 @media(max-width:760px){.footer .footerGrid{gap:30px}.footer .footerLinks{display:flex;flex-wrap:wrap;gap:15px 22px}}
 
 
-/* v1.2 premium photographic homepage hero — NO oversized N, monogram or duplicated logo */
-.nb-polish .n4-hero .nb-photo-hero{
-  position:relative!important;
-  display:flex!important;
-  align-items:flex-end!important;
-  justify-content:flex-start!important;
-  isolation:isolate;
+/* Home hero correction: no added image, no standalone N, original slideshow untouched */
+.nb-polish .n4-hero .nb-original-hero-visual{
+  background:transparent!important;
+  border-left:1px solid rgba(255,255,255,.12);
   min-height:610px;
-  background-color:#0b2943!important;
-  background-image:url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1400&q=85")!important;
-  background-size:cover!important;
-  background-position:center center!important;
-  border-left:1px solid rgba(255,255,255,.16);
+  pointer-events:none;
 }
-.nb-polish .n4-hero .nb-photo-hero::before,
-.nb-polish .n4-hero .nb-photo-hero::after{content:none!important}
-.nb-polish .nb-photo-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(4,19,34,.08) 5%,rgba(4,22,42,.24) 38%,rgba(4,19,36,.88) 100%),linear-gradient(90deg,rgba(4,24,45,.25),transparent 65%)}
-.nb-polish .nb-photo-caption{position:relative;z-index:2;padding:0 clamp(26px,3.5vw,55px) 54px;color:white;max-width:490px}
-.nb-polish .nb-photo-caption-label{display:block;font-size:10px;letter-spacing:.2em;color:#9be4ff;font-weight:800;margin-bottom:16px}
-.nb-polish .nb-photo-caption strong{display:block;font-size:clamp(25px,2.7vw,39px);line-height:1.17;letter-spacing:-.04em;font-weight:750;color:white}
-.nb-polish .nb-photo-caption-rule{display:block;margin-top:23px;width:70px;height:3px;background:#72d8ff}
-.nb-polish .n4-hero-copy{z-index:2}
-.nb-polish .n4-hero-lead{max-width:570px}
-.nb-polish .n4-service-card,.nb-polish .n4-industry{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.nb-polish .n4-service-card:hover{border-color:#a6cce3;box-shadow:0 22px 50px rgba(9,46,75,.14)}
-.nb-polish .n4-industry:hover{background:#edf8fe;border-color:#abd5eb;box-shadow:0 12px 30px rgba(9,46,75,.09)}
-.nb-polish .n4-about-art{background:linear-gradient(140deg,#082a48,#0e5b89 75%,#238fb8)}
-.nb-polish .n4-about-art::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 95% 5%,rgba(127,216,255,.22),transparent 45%)}
-.nb-polish .n4-about-text{position:relative}
-@media(max-width:1000px){.nb-polish .n4-hero .nb-photo-hero{min-height:510px}}
-@media(max-width:760px){.nb-polish .n4-hero .nb-photo-hero{min-height:300px!important;background-position:center 48%!important}.nb-polish .nb-photo-caption{padding:0 25px 28px}.nb-polish .nb-photo-caption strong{font-size:26px}}
-@media(max-width:390px){.nb-polish .nb-photo-caption strong{font-size:23px}}
-@media(prefers-reduced-motion:reduce){.nb-polish .n4-service-card,.nb-polish .n4-industry{transition:none}}
+.nb-polish .n4-hero .nb-original-hero-visual .n4-visual-halo,
+.nb-polish .n4-hero .nb-original-hero-visual .n4-visual-grid{display:none!important}
+.nb-polish .n4-hero .nb-original-hero-visual:before,
+.nb-polish .n4-hero .nb-original-hero-visual:after{display:none!important}
+@media(max-width:760px){.nb-polish .n4-hero .nb-original-hero-visual{display:none!important}.nb-polish .n4-hero-copy{padding-bottom:60px!important}}
