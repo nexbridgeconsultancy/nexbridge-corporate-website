@@ -4,6 +4,7 @@ import Link from 'next/link';
 import PremiumNavbar from './components/PremiumNavbar';
 import './globals.css';
 import "./subpage-refinements.css";
+import "./v06-premium.css";
 
 export const metadata: Metadata = {
   title: { default: 'Nexbridge | Management & IT Consulting Singapore', template: '%s | Nexbridge' },
